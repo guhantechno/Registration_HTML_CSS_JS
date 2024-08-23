@@ -1,0 +1,75 @@
+<html>
+<title></title>
+<style>
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea3c60a4-d192-4ab8-a73d-db6543cf2762/dgi4dwy-32a9b72a-4529-4794-96c2-e6f0f9ce55b9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VhM2M2MGE0LWQxOTItNGFiOC1hNzNkLWRiNjU0M2NmMjc2MlwvZGdpNGR3eS0zMmE5YjcyYS00NTI5LTQ3OTQtOTZjMi1lNmYwZjljZTU1YjkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tMB4OlUmom7Bgz5qLKCV7xPc7MKZinrdetWWOElrCw0);
+        background-size: cover;
+    }  
+    .form{
+        height: 400px;
+        width: 300px;
+        background-color: rgb(211, 179, 120);
+        border-radius: 40px;
+        opacity:0.7;
+    
+    }
+    .input{
+        height: 60px;
+        width: 90px;
+        margin-bottom: 20px;
+        border: 1px solid grey;
+        
+    }
+    button{
+        height: 50px;
+        width: 90%;
+        border: none;
+        background-color: brown;
+        color: bisque;
+        border-radius: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="form"><center>
+            <h2>Registration</h2><br>
+            <form action="">
+            <label for="">Name</label><br><br>
+            <input id="Name" type="text"><br><br>
+            <label for="">Email</label><br><br>
+            <input id="email" type="email"><br><br>
+            <label for="">Password</label><br><br>
+            <input id="Pass" type="Password"></center>
+        
+        </form>
+        <center><button onclick="savedata()">Submit</button></center>
+        </div>
+    </div>
+</body>
+<script>
+    function savedata(){
+        let Name=document.getElementById("Name").value;
+        let email=document.getElementById("email").value;
+        let Pass=document.getElementById("Pass").value;
+        if(name==""){
+            alert("Please enter the name")
+        }
+        else if(email==""){
+            alert("Please enter the email")
+        }else if(Pass==""){
+            alert("Please enter the Password")
+        }
+        else{
+            alert("Success" + name + email + pass)
+        }
+
+
+    }
+</script>
+</html>
